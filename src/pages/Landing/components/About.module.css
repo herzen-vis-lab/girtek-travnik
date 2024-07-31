@@ -1,0 +1,118 @@
+.about {
+    background-color: #000;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .aboutBackground {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .aboutContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    min-height: 800px;
+    width: 100%;
+    align-items: center;
+    padding: 40px 60px 80px;
+  }
+  
+  .aboutImage {
+    aspect-ratio: 0.95;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .aboutText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    margin: auto 0;
+  }
+  
+  .aboutTitle {
+    text-transform: uppercase;
+    font: 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .aboutDescription {
+    font-family: Gotham Pro, sans-serif;
+    margin-top: 24px;
+  }
+  
+  .featureList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 24px;
+  }
+  
+  .featureItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+  }
+  
+  .featureIcon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 40px;
+  }
+  
+  .featureText {
+    font-family: Gotham Pro, sans-serif;
+  }
+  
+  .price {
+    font-family: ArtegraSansExSemiBold, -apple-system, Roboto, Helvetica, sans-serif;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 991px) {
+    .about {
+      max-width: 100%;
+    }
+  
+    .aboutContent {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  
+    .aboutImage {
+      max-width: 100%;
+      margin-top: 34px;
+    }
+  
+    .aboutText {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .aboutTitle {
+      max-width: 100%;
+    }
+  
+    .aboutDescription {
+      max-width: 100%;
+    }
+  
+    .price {
+      max-width: 100%;
+    }
+  }

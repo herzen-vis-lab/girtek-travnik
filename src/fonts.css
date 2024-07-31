@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'ArtegraSansExBold';
+    src: local('ArtegraSansExBold'), url(./fonts/Artega/ArtegraSansExBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'ArtegraSansExSemiBold';
+    src: local('ArtegraSansExSemiBold'), url(./fonts/Artega/ArtegraSansExSemiBold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'ArtegraSansExLight';
+    src: local('ArtegraSansExLight'), url(./fonts/Artega/ArtegraSansExLight.woff2) format('woff2');
+}
+
+
+@font-face {
+    font-family: 'GothamProRegular';
+    src: local('GothamProRegular'), url(./fonts/GothamPro/gothampro.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'GothamProLight';
+    src: local('GothamProLight'), url(./fonts/GothamPro/gothampro_light.ttf) format('ttf');
+}

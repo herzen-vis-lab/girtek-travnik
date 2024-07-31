@@ -1,0 +1,83 @@
+.reviews {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px 10px 80px;
+  }
+  
+  .reviewsTitle {
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font: 400 36px Artegra Sans Extended, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .reviewsContent {
+    display: flex;
+    margin-top: 20px;
+    padding-left: 80px;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .reviewsImage {
+    aspect-ratio: 1.75;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    flex: 1;
+  }
+  
+  .nextReviewButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .nextReviewIcon {
+    aspect-ratio: 1.14;
+    object-fit: auto;
+    object-position: center;
+    width: 60px;
+  }
+  
+  .leaveReviewButton {
+    border-radius: 11px;
+    background-color: #7e7e62;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    font: 400 24px Artegra Sans Extended, -apple-system, Roboto, Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 991px) {
+    .reviews {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  
+    .reviewsTitle {
+      max-width: 100%;
+    }
+  
+    .reviewsContent {
+      flex-wrap: wrap;
+      padding-left: 20px;
+    }
+  
+    .reviewsImage {
+      max-width: 100%;
+    }
+  
+    .leaveReviewButton {
+      max-width: 100%;
+    }
+  }

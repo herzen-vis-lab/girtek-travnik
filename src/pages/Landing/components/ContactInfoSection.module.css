@@ -1,0 +1,85 @@
+.contactInfo {
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px 10px 80px;
+  }
+  
+  .contactTitle {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font: 400 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .contactDetails {
+    align-self: center;
+    margin-top: 20px;
+    width: 1200px;
+    max-width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    grid-template-areas:
+    ". ."
+  }
+  
+  .contactLeft,
+  .contactRight {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  .phoneNumber,
+  .email,
+  .address {
+    font-family: 24px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    margin-top: 29px;
+    gap: 20px;
+  }
+  
+  .socialIcon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 42px;
+  }
+  
+  .mapImage {
+    aspect-ratio: 4.35;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .contactInfo {
+      max-width: 100%;
+    }
+  
+    .contactTitle {
+      max-width: 100%;
+    }
+  
+    .contactDetails {
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+  
+    .mapImage {
+      max-width: 100%;
+    }
+  }

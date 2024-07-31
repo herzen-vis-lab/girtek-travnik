@@ -1,0 +1,97 @@
+.newsletter {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-weight: 400;
+    padding: 40px 10px 80px;
+  }
+  
+  .newsletterContent {
+    max-width: 100%;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #000;
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    padding: 50px 10px;
+  }
+  
+  .newsletterTitle {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font: 36px Artegra Sans Extended, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .newsletterDescription {
+    color: #fff;
+    text-align: center;
+    margin-top: 4px;
+    font: 16px Gotham Pro, sans-serif;
+  }
+  
+  .newsletterForm {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    font-size: 24px;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .emailInput {
+    font-family: Gotham Pro, sans-serif;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    color: #757575;
+    flex: 1;
+    padding: 22px 18px;
+    border: none;
+  }
+  
+  .subscribeButton {
+    font-family: Artegra Sans Extended, -apple-system, Roboto, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #7e7e62;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    padding: 24px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .newsletter {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  
+    .newsletterContent {
+      padding: 30px 20px;
+    }
+  
+    .newsletterForm {
+      flex-direction: column;
+    }
+  
+    .subscribeButton {
+      white-space: normal;
+    }
+  }

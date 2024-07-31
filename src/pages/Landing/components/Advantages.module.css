@@ -1,0 +1,150 @@
+.advantages {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 40px 10px 80px;
+}
+  
+.advantagesTitle {
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  font: 400 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.advantagesGrid {
+  margin-top: 40px;
+  width: clamp(75%, 1200px, 95%);
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 13% 13% 13% 13% 13% 13%;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "high_performance nice_price available_spare_parts"
+    "high_performance nice_price available_spare_parts"
+    "compact_sizes nice_price available_spare_parts"
+    "compact_sizes buoyancy_and_stability_on_water buoyancy_and_stability_on_water"
+    "durable_body buoyancy_and_stability_on_water buoyancy_and_stability_on_water"
+    "durable_body buoyancy_and_stability_on_water buoyancy_and_stability_on_water";
+}
+
+
+
+.durable_body {
+  grid-area: durable_body;
+  position: relative;
+  display: flex;
+  height: 215px;
+}
+.compact_sizes {
+  grid-area: compact_sizes;
+  position: relative;
+  display: flex;
+  height: 215px;
+}
+.high_performance { 
+  grid-area: high_performance;
+  position: relative;
+  display: flex; 
+  height: 215px;
+}
+.nice_price  { 
+  grid-area: nice_price;
+  position: relative;
+  display: flex; 
+  height: 330px;
+}
+.available_spare_parts { 
+  grid-area: available_spare_parts;
+  position: relative;
+  display: flex; 
+  height: 330px;
+}
+.buoyancy_and_stability_on_water  { 
+  position: relative;
+  display: flex;
+  grid-area: buoyancy_and_stability_on_water; 
+  height: 330px;
+}
+
+
+
+.advantageContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+}
+
+.advantageImage {
+  object-fit: cover;
+  width: 100%;
+}
+
+.advantageTitle {
+  color: #d23008;
+  margin-bottom: 10px;
+  font: 24px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.advantageDescription {
+  color: #fff;
+  font: 16px GothamProRegular, sans-serif;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+@media (max-width: 1300px) {
+  .advantagesGrid {
+    width: clamp(75%, 500px, 95%);
+  }
+
+  .advantagesGrid {
+    width: clamp(75%, 500px, 95%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 26% 26% 26%;
+    grid-template-areas:
+      "high_performance nice_price"
+      "compact_sizes available_spare_parts"
+      "durable_body buoyancy_and_stability_on_water"
+  }
+
+  .durable_body {
+    height: 230px;
+  }
+  .compact_sizes {
+    height: 230px;
+  }
+  .high_performance { 
+    height: 230px;
+  }
+  .nice_price  { 
+    height: 230px;
+  }
+  .available_spare_parts { 
+    height: 230px;
+  }
+  .buoyancy_and_stability_on_water  { 
+    height: 230px;
+  }
+}
+
+@media (max-width: 991px) {
+
+
+  .advantages {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .advantagesTitle {
+    max-width: 100%;
+  }
+}
+

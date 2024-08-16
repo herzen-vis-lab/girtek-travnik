@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         <div className={styles.aboutContent}>
             <img src={vehicle} alt="Travnik Vehicle" className={styles.aboutImage} />
             <div className={styles.aboutText}>
-                <h2 className={styles.aboutTitle}>о Травнике</h2>
+                <h2 id="travnik" className={styles.aboutTitle}>о Травнике</h2>
                 <p className={styles.aboutDescription}>
                     Вездеход "Травник" — ваш пропуск в мир безграничных возможностей.
                 </p>

@@ -13,7 +13,8 @@
     text-align: center;
     text-transform: uppercase;
     margin-top: 109px;
-    font: 36px Artegra Sans Extended, -apple-system, Roboto, Helvetica, sans-serif;
+    font: 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: clamp(1rem, 8vw, 36px);
   }
   
   .faqList {
@@ -42,7 +43,7 @@
     color: #fff;
     cursor: pointer;
     display: flex;
-    font-family: Artegra Sans Extended, -apple-system, Roboto, Helvetica, sans-serif;
+    font-family: ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
     font-size: 24px;
     justify-content: space-between;
     padding: 16px 24px;
@@ -65,8 +66,9 @@
   }
   
   .faqAnswer {
-    font-family: Gotham Pro, sans-serif;
-    font-size: 16px;
+    font-family: GothamProMedium, sans-serif;
+    line-height: normal;
+    font-size: 24px;
     padding: 0 24px 16px;
   }
   

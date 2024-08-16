@@ -11,6 +11,7 @@
     text-align: center;
     text-transform: uppercase;
     font: 400 36px Artegra Sans Extended, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: clamp(1rem, 8vw, 36px);
   }
   
   .youtubeContent {
@@ -20,7 +21,7 @@
     position: relative;
     min-height: 675px;
     margin-top: 20px;
-    width: 1200px;
+    width: min(1200px, 90%);
     max-width: 100%;
     align-items: center;
     justify-content: center;
@@ -36,7 +37,7 @@
     object-position: center;
   }
   
-  .playButton {
+  /* .playButton {
     aspect-ratio: 0.84;
     object-fit: auto;
     object-position: center;
@@ -44,7 +45,7 @@
     position: relative;
     z-index: 1;
   }
-  
+   */
   @media (max-width: 991px) {
     .youtubeSection {
       max-width: 100%;
@@ -54,11 +55,11 @@
       max-width: 100%;
     }
   
-    .youtubeContent {
+    /* .youtubeContent {
       padding: 40px 20px;
-    }
-  
+    } */
+/*   
     .playButton {
       margin: 40px 0;
-    }
+    } */
   }

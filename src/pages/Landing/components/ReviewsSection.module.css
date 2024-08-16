@@ -11,7 +11,9 @@
     color: #000;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 20px;
     font: 400 36px Artegra Sans Extended, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: clamp(1rem, 8vw, 36px);
   }
   
   .reviewsContent {
@@ -53,9 +55,20 @@
     color: #fff;
     text-align: center;
     padding: 14px 20px;
+    left: auto;
+    right: auto;
+    width: 100%;
     font: 400 24px Artegra Sans Extended, -apple-system, Roboto, Helvetica, sans-serif;
     border: none;
     cursor: pointer;
+  }
+
+  a {
+    width: 90%;
+  }
+
+  .leaveReviewButton:hover {
+    background-color: #62624A;
   }
   
   @media (max-width: 991px) {

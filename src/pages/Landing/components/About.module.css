@@ -22,8 +22,18 @@
     position: relative;
     min-height: 800px;
     width: 100%;
+    gap: 50px;
     align-items: center;
     padding: 40px 60px 80px;
+  }
+
+  @media (max-width: 750px) {
+    .aboutContent {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
   }
   
   .aboutImage {
@@ -48,10 +58,11 @@
   .aboutTitle {
     text-transform: uppercase;
     font: 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: clamp(1rem, 8vw, 36px);
   }
-  
+
   .aboutDescription {
-    font-family: Gotham Pro, sans-serif;
+    font-family: 24px GothamProMedium, sans-serif;
     margin-top: 24px;
   }
   
@@ -76,12 +87,13 @@
   }
   
   .featureText {
-    font-family: Gotham Pro, sans-serif;
+    font-family: 24px GothamProMedium, sans-serif;
   }
   
   .price {
     font-family: ArtegraSansExSemiBold, -apple-system, Roboto, Helvetica, sans-serif;
     margin-top: 40px;
+    margin-bottom: 100px;
   }
   
   @media (max-width: 991px) {
@@ -91,14 +103,8 @@
   
     .aboutContent {
       max-width: 100%;
-      padding: 0 20px;
     }
-  
-    .aboutImage {
-      max-width: 100%;
-      margin-top: 34px;
-    }
-  
+
     .aboutText {
       max-width: 100%;
       margin-top: 40px;

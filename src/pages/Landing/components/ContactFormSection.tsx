@@ -26,7 +26,7 @@ const ContactFormSection: React.FC = () => {
   return (
     <section className={styles.contactForm}>
       <form onSubmit={handleSubmit} className={styles.form}>
-        <h2 className={styles.formTitle}>Оформить заявку на травник</h2>
+        <h2 id="form" className={styles.formTitle}>Оформить заявку на травник</h2>
         <label htmlFor="name" className={styles.visuallyHidden}>ФИО</label>
         <input
           type="text"

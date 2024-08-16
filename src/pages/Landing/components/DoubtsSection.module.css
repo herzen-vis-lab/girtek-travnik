@@ -10,6 +10,7 @@
     text-align: center;
     text-transform: uppercase;
     font: 400 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: clamp(1rem, 8vw, 36px);
   }
   
   /* @media (max-width: 991px) {
@@ -135,6 +136,7 @@
     text-transform: uppercase;
     margin-top: 100px;
     font: 400 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: clamp(1rem, 8vw, 36px);
   }
   
   /* @media (max-width: 991px) {
@@ -150,6 +152,8 @@
     text-transform: uppercase;
     margin-top: 20px;
     font: 400 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: clamp(1rem, 8vw, 36px);
+
   }
   
   /* @media (max-width: 991px) {

@@ -11,12 +11,13 @@
     text-align: center;
     text-transform: uppercase;
     font: 400 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: clamp(1rem, 8vw, 36px);
   }
   
   .contactDetails {
     align-self: center;
     margin-top: 20px;
-    width: 1200px;
+    width: min(1200px 90%);
     max-width: 100%;
     
     display: grid;
@@ -31,9 +32,11 @@
   .contactRight {
     display: flex;
     flex-direction: column;
-    font-size: 24px;
+    justify-content: space-between;
+    font-size: clamp(0.5rem, 4vw, 24px);
     color: #fff;
     font-weight: 400;
+    height: 100%;
   }
   
   .phoneNumber,
@@ -77,6 +80,7 @@
     .contactDetails {
       flex-wrap: wrap;
       padding: 0 20px;
+      max-width: 100%;
     }
   
     .mapImage {

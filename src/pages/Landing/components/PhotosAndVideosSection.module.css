@@ -12,6 +12,7 @@
     text-align: center;
     text-transform: uppercase;
     font: 400 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: clamp(1rem, 8vw, 36px);
   }
 
   .videoTitle {
@@ -22,7 +23,7 @@
   .videoGalleryContent {
     align-self: center;
     margin-top: 20px;
-    width: 1400px;
+    width: min(90%, 1400px);
     
     display: grid; 
     grid-template-columns: 1fr 4fr 1fr; 
@@ -85,7 +86,7 @@
     object-position: center;
     width: 100%;
   }
-  
+/*   
   @media (max-width: 991px) {
     .gallery {
       max-width: 100%;
@@ -110,3 +111,4 @@
       flex-wrap: wrap;
     }
   }
+ */

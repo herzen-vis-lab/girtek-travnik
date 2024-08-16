@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './SpecificationsSection.module.css';
 
 import pattern2 from '/assets/background/pattern2.png'
+import card from '/assets/background/specifications-card.svg'
 
 import dimensions_left from '/assets/card photos/dimensions left.png'
 import dimensions_right from '/assets/card photos/dimensions right.png'
@@ -27,12 +28,14 @@ const SpecificationsSection: React.FC = () => {
   return (
     <section className={styles.technicalSpecs}>
       <img src={pattern2} alt="" className={styles.specsBackground} />
-      <h2 className={styles.specsTitle}>Технические характеристики</h2>
-      <div className={styles.specsContent} style={{backgroundImage: "url(/assets/background/specifications-card.svg)"}}>
+      <h2 id="specs" className={styles.specsTitle}>Технические характеристики</h2>
+      <img src={card} className={styles.specsCardImage}/>
+
+      <div className={styles.specsContent}>
         <div className={styles.specsTabs}>
           <button className={getClassName(0)} onClick={() => setActiveTab(0)}>Габариты</button>
           <button className={getClassName(1)} onClick={() => setActiveTab(1)}>Масса</button>
-          <button className={getClassName(2)} onClick={() => setActiveTab(2)}>Двигательь</button>
+          <button className={getClassName(2)} onClick={() => setActiveTab(2)}>Двигатель</button>
         </div>
         <div className={styles.specsImageContainer}> 
           <img src={tabsContent[activeTab].left} alt="" className={styles.leftImage}/>

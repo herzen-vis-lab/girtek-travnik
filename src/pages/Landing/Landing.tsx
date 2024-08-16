@@ -10,7 +10,7 @@ import FAQSection from './components/FAQSection';
 import DoubtsSection from './components/DoubtsSection';
 import ContactFormSection from './components/ContactFormSection';
 import ContactInfoSection from './components/ContactInfoSection';
-import ReviewsSection from './components/ReviewsSection'
+// import ReviewsSection from './components/ReviewsSection'
 import YouTubeSection from './components/YouTubeSection';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
@@ -30,7 +30,7 @@ const Landing: React.FC = () => {
         <DoubtsSection />
         <ContactFormSection />
         <ContactInfoSection />
-        <ReviewsSection />
+        {/* <ReviewsSection /> */}
         <YouTubeSection />
         <Newsletter />
       </main>

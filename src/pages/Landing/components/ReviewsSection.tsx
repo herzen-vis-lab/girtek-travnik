@@ -11,7 +11,9 @@ const Reviews: React.FC = () => {
           <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5973b4971f01de57f1ab6b8c02a17e24141e287557b2e10b667819d9a7b00de9?apiKey=1c1bda4502174a749d79ad8621fe0119&&apiKey=1c1bda4502174a749d79ad8621fe0119" alt="" className={styles.nextReviewIcon} />
         </button>
       </div>
-      <button className={styles.leaveReviewButton}>Оставить отзыв</button>
+      <a href="https://girtek.ru/catalog/wheel/travn/travnik/review/">
+        <button className={styles.leaveReviewButton}>Оставить отзыв</button>
+      </a>
     </section>
   );
 };

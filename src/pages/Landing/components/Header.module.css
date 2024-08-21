@@ -19,7 +19,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-right: 16px;
+  padding-right: 32px;
   
 }
 
@@ -49,7 +49,7 @@
 
 .contactInfo {
   display: flex;
-  padding-left: 20px;
+  padding-left: 40px;
   justify-content: end;
   flex: 1;
 }
@@ -58,7 +58,7 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding-right: 20px;
+  padding-right: 40px;
   font-size: 16px;
   color: #fff;
   font-weight: 400;
@@ -97,9 +97,64 @@ a:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 710px) {
   .contactDetails {
     flex-direction: column;
+    gap: 10px;
+    padding-left: 0px;
+  }
+
+  .contactInfo {
+    padding-left: 0px;
   }
 }
 
+@media (max-width: 600px) {
+  .logoWrapper {
+    padding-right: 5%;
+  }
+
+  .logo {
+    width: min(8vw, 47px);
+  }
+  
+  .socialIcons {
+    gap: 10px;
+  }
+
+  .socialIcon {
+    width: min(8vw, 30px);
+  }
+
+  .contactDetails {
+    font-size: 2vw;
+  }
+}
+
+.menu {
+  position: absolute;
+  margin-top: 0px;
+  width: 100%;
+  z-index: 2;
+  background-color: #000000b5;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menuItem {
+  color: #fff;
+  font: 18px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.menuItemImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  height: 40px;
+}

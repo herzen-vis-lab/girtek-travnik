@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
                     <span className={styles.featureText}>Доступный</span>
                     </li>
                 </ul>
-                <p className={styles.price}>Цена: от 1 286 000 ₽</p>
+                <p className={styles.price}>Цена: от 1 386 000 ₽</p>
             </div>
         </div>
     </section>

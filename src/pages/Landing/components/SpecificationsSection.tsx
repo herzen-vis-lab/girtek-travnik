@@ -19,6 +19,17 @@ const tabsContent = [
 ]
 
 const SpecificationsSection: React.FC = () => {
+  const onLinkClick = () => {
+    const pdfUrl = "ПС ТРАВНИК.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Травник.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+
+
   const [ activeTab, setActiveTab ] = React.useState(0);
 
   function getClassName(tab : number) {
@@ -43,7 +54,7 @@ const SpecificationsSection: React.FC = () => {
         </div>
       </div>
       <p className={styles.specsNote}>
-        Все технические характеристики можно найти в документе по ссылке
+        Все технические характеристики можно найти в документе по <a style={{textDecoration: "underline", cursor: "pointer"}} onClick={() => onLinkClick()}>ссылке</a>
       </p>
     </section>
   );

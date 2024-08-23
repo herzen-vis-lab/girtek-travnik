@@ -11,6 +11,8 @@ import weight_right from '/assets/card photos/weight right.png'
 import engine_left from '/assets/card photos/engine left.png'
 import engine_right from '/assets/card photos/engine right.png'
 
+import pdf from '/assets/ПС ТРАВНИК.pdf'
+
 
 const tabsContent = [
   {left: dimensions_left, right: dimensions_right},
@@ -19,15 +21,15 @@ const tabsContent = [
 ]
 
 const SpecificationsSection: React.FC = () => {
-  const onLinkClick = () => {
-    const pdfUrl = "ПС ТРАВНИК.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Травник.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-};
+//   const onLinkClick = () => {
+//     const pdfUrl = "ПС ТРАВНИК.pdf";
+//     const link = document.createElement("a");
+//     link.href = pdfUrl;
+//     link.download = "Травник.pdf"; // specify the filename
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// };
 
 
   const [ activeTab, setActiveTab ] = React.useState(0);
@@ -54,7 +56,8 @@ const SpecificationsSection: React.FC = () => {
         </div>
       </div>
       <p className={styles.specsNote}>
-        Все технические характеристики можно найти в документе по <a style={{textDecoration: "underline", cursor: "pointer"}} onClick={() => onLinkClick()}>ссылке</a>
+      {/* Все технические характеристики можно найти в документе по <a style={{textDecoration: "underline", cursor: "pointer"}} onClick={() => onLinkClick()}>ссылке</a> */}
+      Все технические характеристики можно найти в документе по <a href={pdf} rel="noopener noreferrer" target="_blank" style={{textDecoration: "underline", cursor: "pointer"}}>ссылке</a>
       </p>
     </section>
   );

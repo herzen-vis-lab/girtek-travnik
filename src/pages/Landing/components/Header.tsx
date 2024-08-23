@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       <header className={styles.header}>
         <div className={styles.headerContent}>
           <div className={styles.logoWrapper}>
-            <img src={logo} alt="Girtek Logo" className={styles.logo} />
+            <a href="https://girtek.ru/"><img src={logo} alt="Girtek Logo" className={styles.logo} /></a>
             {
               hideMenuLinks ? <img src={menu} alt="Menu" onClick={() => setIsMenuOpen(x => !x)} className={styles.logo} /> : <></>
             }

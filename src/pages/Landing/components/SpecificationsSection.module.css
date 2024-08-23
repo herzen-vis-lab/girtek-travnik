@@ -140,13 +140,6 @@
 }
 
 @media (max-width: 991px) {
-
-
-    /* .specsContent {
-        padding-top: 120px;
-        padding-bottom: 0px;
-    } */
-
     .technicalSpecs {
         max-width: 100%;
     }
@@ -168,12 +161,6 @@
     .specsCardImage {
         padding-top: 200px;
     }
-}
-
-@media (max-width: 800px) {
-    /* .specsContent {
-        padding-top: 110px;
-    } */
 }
 
 @media (max-width: 680px) {
@@ -202,10 +189,6 @@
         margin-right: 10%;
         width: 80%;
     }
-/* 
-    .specsCardImage {
-        content: url("/assets/background/specifications-card6402.svg");
-    } */
 }
 
 @media (max-width: 640px) {
@@ -223,6 +206,7 @@
 @media (max-width: 550px) {
     .specsCardImage {
         content: url("/assets/background/specifications-card460.svg");
+        padding-top: 0px;
     }
 
     .specsContent {
@@ -294,23 +278,13 @@
     }
 }
 
-@media (max-width: 400px) {
-    .specsContent {
-        padding-top: 60px;
-        height: 350px;
-    }
-
-    .leftImage, .rightImage {
-        height: 140px;
-    }
-
-    .specsNote {
-        margin-top: 100px;
-    }
-}
-
 @media (max-width: 375px) {
+    .specsCardImage {
+        margin-top: 50px;
+    }
+
     .specsContent {
+        height: 400px;
         padding-top: 70px;
     }
 
@@ -319,9 +293,17 @@
     }
 }
 
-
 @media (max-width: 350px) {
+    .specsCardImage {
+        margin-top: 50px;
+    }
+
     .specsContent {
-        padding-top: 80px;
+        height: 350px;
+        padding-top: 60px;
+    }
+
+    .leftImage, .rightImage {
+        height: 120px;
     }
 }

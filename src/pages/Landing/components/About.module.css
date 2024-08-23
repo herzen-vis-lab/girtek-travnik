@@ -24,7 +24,7 @@
     width: 100%;
     gap: 50px;
     align-items: center;
-    padding: 40px 60px 80px;
+    padding: 40px 40px 80px;
   }
 
   @media (max-width: 750px) {
@@ -94,6 +94,7 @@
     font-family: ArtegraSansExSemiBold, -apple-system, Roboto, Helvetica, sans-serif;
     margin-top: 40px;
     margin-bottom: 100px;
+    font-size: clamp(0.5rem, 5.5vw, 24px);
   }
   
   @media (max-width: 991px) {

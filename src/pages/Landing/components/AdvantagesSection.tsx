@@ -8,12 +8,15 @@ import card3 from '/assets/advantages/4 image.png'
 import card5 from '/assets/advantages/5 image.png'
 import card4 from '/assets/advantages/6 image.png'
 
+import video1 from '/assets/video roll/video1.mp4'
+import video2 from '/assets/video roll/video2.mp4'
+import video3 from '/assets/video roll/video3.mp4'
+import video4 from '/assets/video roll/video4.mp4'
+import video5 from '/assets/video roll/video5.mp4'
 
-import video1 from '/assets/video roll/1.gif'
-import video2 from '/assets/video roll/2.gif'
-import video3 from '/assets/video roll/3.gif'
-import video4 from '/assets/video roll/4.gif'
-import video5 from '/assets/video roll/5.gif'
+import photo_nice_price from '/assets/advantages/nice-price.mp4'
+import video_buoyancy from '/assets/advantages/buoyancy.mp4'
+import video_high_passability from '/assets/advantages/high-passability.mp4'
 
 
 interface AdvantageProps {
@@ -30,7 +33,7 @@ interface AdvantageProps {
 
     return (
     <div className={classItemName}>
-      {isHovered ? <img src={videoSrc} alt="" onMouseLeave={() => setIsHovered(false)} className={styles.advantageVideo}/> : <img src={imageSrc} alt="" className={styles.advantageImage}/>}
+      {isHovered ? <video src={videoSrc} onMouseLeave={() => setIsHovered(false)} className={styles.advantageVideo} autoPlay loop muted/> : <img src={imageSrc} alt="" className={styles.advantageImage}/>}
       {isHovered ? <></> : <div className={styles.advantageContent} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
         <h3 className={styles.advantageTitle}>{title}</h3>
         <p className={styles.advantageDescription}>{description}</p>
@@ -46,7 +49,7 @@ const Advantages: React.FC = () => {
         title: "ВЫСОКАЯ ПРОХОДИМОСТЬ",
         description: "Большой дорожный просвет и низкий центр тяжести гарантируют непревзойденную проходимость вездехода",
         imageSrc: card1,
-        videoSrc: video1
+        videoSrc: video_high_passability
     },
     {
         classItemName: styles.compact_sizes,
@@ -67,7 +70,7 @@ const Advantages: React.FC = () => {
         title: "ПРИЯТНАЯ СТОИМОСТЬ",
         description: "\"Травник\" по цене сопоставим с квадроциклом, но значительно превосходит его по грузоподъемности и практичности имея положительную плавучесть. Вы всегда выйдете сухим из воды. Также в комплект входят лопата, топор и домкрат, что делает \"Травник\" готовым к любым вызовам",
         imageSrc: card4,
-        videoSrc: video4
+        videoSrc: photo_nice_price
     },
     {
         classItemName: styles.available_spare_parts,
@@ -81,7 +84,7 @@ const Advantages: React.FC = () => {
         title: "ПЛАВУЧЕСТЬ И УСТОЙЧИВОСТЬ НА ВОДЕ",
         description: "Этот снегоболотоход ещё и герметичная водоизмещающая лодка! Возможна установка электрического или бензинового лодочного мотора для повышения скорости передвижения по воде",
         imageSrc: card6,
-        videoSrc: video5
+        videoSrc: video_buoyancy
     }
   ];
 

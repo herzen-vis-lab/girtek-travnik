@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Hero.module.css';
 
-import runway from '/assets/background/context.png'
+import runway from '/assets/background/context.jpg'
 // import uppart from '/assets/background/up part.png'
 import TRAVNIK from '/assets/background/TRAVNIK.svg'
 import { handleClickScroll } from '../../../helpers/handleClickScroll';

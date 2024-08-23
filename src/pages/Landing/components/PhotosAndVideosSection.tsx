@@ -8,20 +8,20 @@ import left_arrow_red from '/assets/icons/left red arrow.svg'
 import right_arrow_red from '/assets/icons/right red arrow.svg'
 
 
-import photo1 from '/assets/photo roll/1.png'
-import photo2 from '/assets/photo roll/2.png'
-import photo3 from '/assets/photo roll/3.png'
-import photo4 from '/assets/photo roll/4.png'
-import photo5 from '/assets/photo roll/5.png'
-import photo6 from '/assets/photo roll/6.png'
-import photo7 from '/assets/photo roll/7.png'
-import photo8 from '/assets/photo roll/8.png'
+import photo1 from '/assets/photo roll/1.jpg'
+import photo2 from '/assets/photo roll/2.jpg'
+import photo3 from '/assets/photo roll/3.jpg'
+import photo4 from '/assets/photo roll/4.jpg'
+import photo5 from '/assets/photo roll/5.jpg'
+import photo6 from '/assets/photo roll/6.jpg'
+import photo7 from '/assets/photo roll/7.jpg'
+import photo8 from '/assets/photo roll/8.jpg'
 
-import video1 from '/assets/video roll/1.gif'
-import video2 from '/assets/video roll/2.gif'
-import video3 from '/assets/video roll/3.gif'
-import video4 from '/assets/video roll/4.gif'
-import video5 from '/assets/video roll/5.gif'
+import video1 from '/assets/video roll/video1.mp4'
+import video2 from '/assets/video roll/video2.mp4'
+import video3 from '/assets/video roll/video3.mp4'
+import video4 from '/assets/video roll/video4.mp4'
+import video5 from '/assets/video roll/video5.mp4'
 
 
 const photos = [
@@ -74,7 +74,7 @@ const PhotosAndVideosSection: React.FC = () => {
             onMouseLeave={() => setHoveredLeftVideoArrow(false)}>
             <img src={hoveredLeftVideoArrow ? left_arrow_red : left_arrow} alt="" className={styles.galleryButtonIcon} />
         </button> : <div/>}
-        <img src={videos[videoIndex]} alt="" className={styles.galleryImage} />
+        <video src={videos[videoIndex]} className={styles.galleryImage} autoPlay loop muted/>
         {videoIndex != videos.length - 1 ? <button
             className={styles.rightGalleryButton}
             onClick={() => setVideoIndex(x => x + 1)}

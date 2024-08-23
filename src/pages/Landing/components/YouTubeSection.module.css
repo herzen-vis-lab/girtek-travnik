@@ -19,23 +19,23 @@
     flex-direction: column;
     align-self: center;
     position: relative;
-    min-height: 675px;
+    min-height: min(675px, 50.6vw);
     margin-top: 20px;
-    width: min(1200px, 90%);
+    width: min(1200px, 90vw);
     max-width: 100%;
     align-items: center;
     justify-content: center;
     padding: 80px 60px;
   }
   
-  .youtubeBackground {
+  /* .youtubeBackground {
     position: absolute;
     inset: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
-  }
+  } */
 
   .youtubeBackground2 {
     position: absolute;

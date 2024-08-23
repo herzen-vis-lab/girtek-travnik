@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: column;
     padding: 10px 10px;
+    background-size: contain;
+
 }
 
 .specsBackground {
@@ -24,7 +26,7 @@
     text-transform: uppercase;
     padding: 40px 10px 40px;
     font: 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
-    font-size: clamp(1rem, 8vw, 36px);
+    font-size: clamp(1rem, 7.5vw, 36px);
 }
 
 .specsCardImage {
@@ -37,12 +39,7 @@
     max-width: 100%;
     width: 90%;
     height: 100%;
-}
-
-@media (max-width: 820px) {
-    .specsCardImage {
-        padding-top: 200px;
-    }
+    content: url("/assets/background/specifications-card1200.svg");
 }
 
 
@@ -51,7 +48,6 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    min-height: 613px;
     width: 1200px;
     padding: 90px 0 80px;
 }
@@ -72,6 +68,7 @@
 .specTab {
     color: #fff;
     font-family: ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: clamp(0.5rem, 3vw, 16px);
     background: none;
     border: none;
     cursor: pointer;
@@ -118,35 +115,6 @@
     z-index: 1;
 }
 
-@media (max-width: 1000px) {
-    .specsContent {
-        padding-top: 120px;
-        padding-bottom: 0px;
-    }
-
-    .specsImageContainer {
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 50px;
-        grid-template-areas: 
-        "."
-        ".";
-    }
-}
-
-@media (max-width: 800px) {
-    .specsContent {
-        padding-top: 110px;
-    }
-}
-
-@media (max-width: 600px) {
-    .specsContent {
-        padding-top: 100px;
-    }
-}
-
-
 .specsNote {
     position: relative;
     text-align: center;
@@ -172,6 +140,13 @@
 }
 
 @media (max-width: 991px) {
+
+
+    /* .specsContent {
+        padding-top: 120px;
+        padding-bottom: 0px;
+    } */
+
     .technicalSpecs {
         max-width: 100%;
     }
@@ -183,10 +158,170 @@
     .specsTabs {
         flex-wrap: wrap;
     }
+
+    /* .specsNote {
+        max-width: 80%;
+    } */
 }
 
-@media (max-width: 643px) {
+@media (max-width: 820px) {
+    .specsCardImage {
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    /* .specsContent {
+        padding-top: 110px;
+    } */
+}
+
+@media (max-width: 680px) {
+    .specsCardImage {
+        content: url("/assets/background/specifications-card960.svg");
+        margin-top: 70px;
+    }
+
+
+    .specsContent {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 350px;
+    }
+
+    .specsNote {
+        border: 1px solid #fff;
+    }
+
+    .specsCardImage {
+        padding-top: 20px;
+    }
+
+    .specsImageContainer {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+/* 
+    .specsCardImage {
+        content: url("/assets/background/specifications-card6402.svg");
+    } */
+}
+
+@media (max-width: 640px) {
+    .specsContent {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .specsContent {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    .specsCardImage {
+        content: url("/assets/background/specifications-card460.svg");
+    }
+
+    .specsContent {
+        padding-top: 90px;
+        height: 650px;
+    }
+
+    .specsImageContainer {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 10px;
+        width: 200px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        grid-template-areas: 
+        "."
+        ".";
+    }
+
+    .leftImage, .rightImage {
+        height: 190px;
+        width: auto;
+        max-width: fit-content;
+    }
+}
+
+@media (max-width: 525px) {
+    .specsContent {
+        padding-top: 100px;
+        height: 625px;
+    }
+}
+
+@media (max-width: 475px) {
+    .specsContent {
+        padding-top: 70px;
+        height: 550px;
+    }
+}
+
+@media (max-width: 450px) {
+    .specsContent {
+        padding-top: 80px;
+        height: 550px;
+    }
+
+    .leftImage, .rightImage {
+        height: 170px;
+    }
+}
+
+@media (max-width: 425px) {
+    .specsContent {
+        padding-top: 80px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 400px) {
+    .specsContent {
+        padding-top: 70px;
+        height: 450px;
+    }
+
+    .leftImage, .rightImage {
+        height: 160px;
+    }
+}
+
+@media (max-width: 400px) {
+    .specsContent {
+        padding-top: 60px;
+        height: 350px;
+    }
+
+    .leftImage, .rightImage {
+        height: 140px;
+    }
+
     .specsNote {
         margin-top: 100px;
+    }
+}
+
+@media (max-width: 375px) {
+    .specsContent {
+        padding-top: 70px;
+    }
+
+    .leftImage, .rightImage {
+        height: 130px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .specsContent {
+        padding-top: 80px;
     }
 }

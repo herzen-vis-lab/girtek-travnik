@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './SpecificationsSection.module.css';
 
 import pattern2 from '/assets/background/pattern2.png'
-import card from '/assets/background/specifications-card.svg'
+// import card from '/assets/background/specifications-card.svg'
 
 import dimensions_left from '/assets/card photos/dimensions left.png'
 import dimensions_right from '/assets/card photos/dimensions right.png'
@@ -40,7 +40,7 @@ const SpecificationsSection: React.FC = () => {
     <section className={styles.technicalSpecs}>
       <img src={pattern2} alt="" className={styles.specsBackground} />
       <h2 id="specs" className={styles.specsTitle}>Технические характеристики</h2>
-      <img src={card} className={styles.specsCardImage}/>
+      <img className={styles.specsCardImage}/>
 
       <div className={styles.specsContent}>
         <div className={styles.specsTabs}>

@@ -67,8 +67,11 @@
     object-fit: auto;
     object-position: center;
     width: 60px;
+    padding: 10px;
     fill: #d23008;
   }
+
+
   
   .galleryButtonIcon:hover {
     fill: #d23008;

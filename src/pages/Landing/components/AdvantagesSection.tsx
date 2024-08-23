@@ -8,11 +8,8 @@ import card3 from '/assets/advantages/4 image.png'
 import card5 from '/assets/advantages/5 image.png'
 import card4 from '/assets/advantages/6 image.png'
 
-import video1 from '/assets/video roll/video1.mp4'
 import video2 from '/assets/video roll/video2.mp4'
 import video3 from '/assets/video roll/video3.mp4'
-import video4 from '/assets/video roll/video4.mp4'
-import video5 from '/assets/video roll/video5.mp4'
 
 import photo_nice_price from '/assets/advantages/nice-price.mp4'
 import video_buoyancy from '/assets/advantages/buoyancy.mp4'

@@ -151,10 +151,10 @@
     grid-template-rows: 13% 13% 13% 13% 13% 13%;
     grid-template-areas:
       "high_performance"
-      "nice_price"
       "compact_sizes"
-      "available_spare_parts"
       "durable_body"
+      "nice_price"
+      "available_spare_parts"
       "buoyancy_and_stability_on_water"
   }
 

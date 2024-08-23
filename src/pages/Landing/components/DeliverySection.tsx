@@ -56,7 +56,7 @@ const steps: DeliveryStepProps[] = [
         classItemName: styles.deliveryStep4,
         number: "4",
         title: "Получите посылку и преодолевайте любые преграды",
-        description: "Желаем Вам приятных поездок",
+        description: "Желаем вам приятных поездок",
         imageSrc: image4
     }
 ];

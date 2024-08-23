@@ -15,6 +15,7 @@ import photo_nice_price from '/assets/advantages/nice-price.mp4'
 import video_buoyancy from '/assets/advantages/buoyancy.mp4'
 import video_high_passability from '/assets/advantages/high-passability.mp4'
 
+import { useStyleMediaQuery } from './../../../hooks/useStyleMediaQuery'
 
 interface AdvantageProps {
     classItemName: string;
@@ -27,11 +28,12 @@ interface AdvantageProps {
 
   const Advantage: React.FC<AdvantageProps> = ({ classItemName, title, description, imageSrc, videoSrc }) => {
     const [ isHovered, setIsHovered ] = React.useState(false);
+    const { matches: hoverIsNotWorking } = useStyleMediaQuery({ mixOrMax: 'max', widthOrHeight: 'width', value: 850 });
 
     return (
     <div className={classItemName}>
-      {isHovered ? <video src={videoSrc} onMouseLeave={() => setIsHovered(false)} className={styles.advantageVideo} autoPlay loop muted/> : <img src={imageSrc} alt="" className={styles.advantageImage}/>}
-      {isHovered ? <></> : <div className={styles.advantageContent} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+      {isHovered && !hoverIsNotWorking ? <video src={videoSrc} onMouseLeave={() => setIsHovered(false)} className={styles.advantageVideo} autoPlay loop muted/> : <img src={imageSrc} alt="" className={styles.advantageImage} onMouseEnter={() => setIsHovered(true)}/>}
+      {isHovered && !hoverIsNotWorking ? <></> : <div className={styles.advantageContent} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
         <h3 className={styles.advantageTitle}>{title}</h3>
         <p className={styles.advantageDescription}>{description}</p>
       </div>}

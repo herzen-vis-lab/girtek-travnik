@@ -43,6 +43,7 @@
     .footerColumns {
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: 1fr 1fr; 
+        gap: 40px;
         grid-template-areas: 
             "footerColumn1 footerColumn2"
             "footerColumn3 footerColumn4";

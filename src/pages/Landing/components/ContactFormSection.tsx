@@ -74,7 +74,7 @@ const ContactFormSection: React.FC = () => {
         ></textarea>
 
         <div className={styles.formFooter}>
-          <p className={styles.price}>1 286 000 ₽</p>
+          <p className={styles.price}>1 386 000 ₽</p>
           <button type="submit" className={styles.submitButton}>Отправить заявку</button>
         </div>
       </form>

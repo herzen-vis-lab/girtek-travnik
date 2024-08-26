@@ -74,7 +74,7 @@ const PhotosAndVideosSection: React.FC = () => {
             onMouseLeave={() => setHoveredLeftVideoArrow(false)}>
             <img src={hoveredLeftVideoArrow ? left_arrow_red : left_arrow} alt="" className={styles.galleryButtonIcon} />
         </button> : <div/>}
-        <video src={videos[videoIndex]} className={styles.galleryImage} autoPlay loop muted/>
+        <video src={videos[videoIndex]} className={styles.galleryImage} autoPlay loop muted playsInline/>
         {videoIndex != videos.length - 1 ? <button
             className={styles.rightGalleryButton}
             onClick={() => setVideoIndex(x => x + 1)}

@@ -15,7 +15,7 @@ import photo_nice_price from '/assets/advantages/nice-price.mp4'
 import video_buoyancy from '/assets/advantages/buoyancy.mp4'
 import video_high_passability from '/assets/advantages/high-passability.mp4'
 
-import { useStyleMediaQuery } from './../../../hooks/useStyleMediaQuery'
+// import { useStyleMediaQuery } from './../../../hooks/useStyleMediaQuery'
 
 interface AdvantageProps {
     classItemName: string;

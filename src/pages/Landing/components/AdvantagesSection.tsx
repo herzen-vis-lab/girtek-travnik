@@ -26,14 +26,28 @@ interface AdvantageProps {
   }
   // const Header: React.FC = () => {
 
+//   const Advantage: React.FC<AdvantageProps> = ({ classItemName, title, description, imageSrc, videoSrc }) => {
+//     const [ isHovered, setIsHovered ] = React.useState(false);
+//     const { matches: hoverIsNotWorking } = useStyleMediaQuery({ mixOrMax: 'max', widthOrHeight: 'width', value: 850 });
+
+//     return (
+//     <div className={classItemName}>
+//       {isHovered && !hoverIsNotWorking ? <video src={videoSrc} onMouseLeave={() => setIsHovered(false)} className={styles.advantageVideo} autoPlay loop muted playsInline/> : <img src={imageSrc} alt="" className={styles.advantageImage} onMouseEnter={() => setIsHovered(true)}/>}
+//       {isHovered && !hoverIsNotWorking ? <></> : <div className={styles.advantageContent} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+//         <h3 className={styles.advantageTitle}>{title}</h3>
+//         <p className={styles.advantageDescription}>{description}</p>
+//       </div>}
+//     </div>
+//   );
+// }
+
   const Advantage: React.FC<AdvantageProps> = ({ classItemName, title, description, imageSrc, videoSrc }) => {
     const [ isHovered, setIsHovered ] = React.useState(false);
-    const { matches: hoverIsNotWorking } = useStyleMediaQuery({ mixOrMax: 'max', widthOrHeight: 'width', value: 850 });
 
     return (
     <div className={classItemName}>
-      {isHovered && !hoverIsNotWorking ? <video src={videoSrc} onMouseLeave={() => setIsHovered(false)} className={styles.advantageVideo} autoPlay loop muted/> : <img src={imageSrc} alt="" className={styles.advantageImage} onMouseEnter={() => setIsHovered(true)}/>}
-      {isHovered && !hoverIsNotWorking ? <></> : <div className={styles.advantageContent} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+      {isHovered ? <video src={videoSrc} onMouseLeave={() => setIsHovered(false)} className={styles.advantageVideo} autoPlay loop muted playsInline/> : <img src={imageSrc} alt="" className={styles.advantageImage} onMouseEnter={() => setIsHovered(true)}/>}
+      {isHovered ? <></> : <div className={styles.advantageContent} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
         <h3 className={styles.advantageTitle}>{title}</h3>
         <p className={styles.advantageDescription}>{description}</p>
       </div>}

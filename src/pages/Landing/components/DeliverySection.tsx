@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './DeliverySection.module.css';
 
 import image1 from '/assets/icons/delivery process/1.svg'
-import image2 from '/assets/icons/delivery process/2.svg'
+import image2 from '/assets/icons/delivery process/2.png'
 import image3 from '/assets/icons/delivery process/3.svg'
-import image4 from '/assets/icons/delivery process/4.svg'
+import image4 from '/assets/icons/delivery process/4.png'
 
 interface DeliveryStepProps {
     classItemName: string;

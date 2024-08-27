@@ -229,7 +229,7 @@
     }
 
     .leftImage, .rightImage {
-        height: 190px;
+        height: 185px;
         width: auto;
         max-width: fit-content;
     }
@@ -256,7 +256,7 @@
     }
 
     .leftImage, .rightImage {
-        height: 170px;
+        height: 165px;
     }
 }
 
@@ -274,7 +274,7 @@
     }
 
     .leftImage, .rightImage {
-        height: 160px;
+        height: 155px;
     }
 }
 
@@ -289,7 +289,7 @@
     }
 
     .leftImage, .rightImage {
-        height: 130px;
+        height: 125px;
     }
 }
 
@@ -304,6 +304,6 @@
     }
 
     .leftImage, .rightImage {
-        height: 120px;
+        height: 115px;
     }
 }

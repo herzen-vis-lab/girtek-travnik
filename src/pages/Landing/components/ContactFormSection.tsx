@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import styles from './ContactFormSection.module.css';
 import emailjs from '@emailjs/browser'
+import { Alert } from "./components/Alert";
 
 const ContactFormSection: React.FC = () => {
+  const [isSubmited, setIsSubmited] = useState('')
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -57,14 +60,24 @@ https://girtek.ru/catalog/wheel/travn/travnik/
           phone: '',
           comment: ''
         });
+        setIsSubmited('success')
+
+        // setInterval(() => setIsSubmited(''), 3000);
       })
       .catch((error) => {
         console.error('Error sending email: ', error);
+        setIsSubmited('error')
+
+        // setInterval(() => setIsSubmited(''), 3000);
       })
   };
 
   return (
-    <section className={styles.contactForm}>
+    <>
+      {isSubmited == 'success' ? <Alert type='success' message='Сообщение успешно отправлено'><p>Сообщение успешно отправлено</p></Alert> : <></>}
+      {isSubmited == 'error' ? <Alert type='error' message='Что-то пошло не так'><p>Что-то пошло не так</p></Alert> : <></>}
+      
+      <section className={styles.contactForm}>
       <form onSubmit={handleSubmit} className={styles.form}>
         <h2 id="form" className={styles.formTitle}>Оформить заявку на травник</h2>
         <label htmlFor="name" className={styles.visuallyHidden}>ФИО</label>
@@ -119,6 +132,7 @@ https://girtek.ru/catalog/wheel/travn/travnik/
         </div>
       </form>
     </section>
+    </>
   );
 };
 

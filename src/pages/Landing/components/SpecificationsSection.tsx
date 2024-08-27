@@ -59,7 +59,9 @@ const SpecificationsSection: React.FC = () => {
       {/* Все технические характеристики можно найти в документе по <a style={{textDecoration: "underline", cursor: "pointer"}} onClick={() => onLinkClick()}>ссылке</a> */}
       Все технические характеристики можно найти в документе по <a href={pdf} rel="noopener noreferrer" target="_blank" style={{textDecoration: "underline", cursor: "pointer"}}>ссылке</a>
       </p>
-
+      {/* <object data="pdf" type="application/pdf" width="100%" height="100%">
+        <p>Alternative text - include a link <a href="http://africau.edu/images/default/sample.pdf">to the PDF!</a></p>
+      </object> */}
     </section>
   );
 };

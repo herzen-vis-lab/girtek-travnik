@@ -153,6 +153,7 @@
   .tableString {
     display: grid;
     grid-template-columns: 350px 1fr;
+    max-width: 100%;
     gap: 10px;
     margin-top: 20px;
     grid-auto-flow: column;
@@ -163,7 +164,7 @@
   @media (max-width: 800px) {
     .tableString {
         grid-auto-flow: row;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         grid-template-rows: 1fr;
         grid-template-areas:
             "tableLeft"
@@ -176,11 +177,16 @@
     font-family: ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
     font-size: 24px;
     padding-right: 10px;
+    font-size: clamp(0.5rem, 5vw, 24px);
+    max-width: 100%;
   }
   .tableRight {
     font-family: GothamProRegular, sans-serif;
     font-size: 24px;
     padding-right: 10px;
+    line-height: normal;
+    font-size: clamp(0.5rem, 5vw, 24px);
+    max-width: 100%;
   }
 
 @media (max-width: 1300px) {

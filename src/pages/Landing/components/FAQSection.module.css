@@ -14,7 +14,7 @@
     text-transform: uppercase;
     margin-top: 109px;
     font: 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
-    font-size: clamp(1rem, 8vw, 36px);
+    font-size: clamp(1rem, 7vw, 36px);
   }
   
   .faqList {
@@ -49,6 +49,7 @@
     padding: 16px 24px;
     text-align: left;
     width: 100%;
+    font-size: clamp(1rem, 5vw, 24px);
   }
 
   .faqQuestion:focus, .faqQuestion:hover {
@@ -91,5 +92,10 @@
     .faqQuestion,
     .faqAnswer {
       padding: 16px 20px;
+    }
+
+    .faqIcon {
+      width: 30px;
+      padding-left: 10px;
     }
   }

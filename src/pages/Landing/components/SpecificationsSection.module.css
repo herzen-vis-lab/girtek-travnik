@@ -129,6 +129,7 @@
     text-align: left;
     width: 100%;
     padding-left: 0px;
+    font-size: clamp(1rem, 5vw, 24px);
   }
 
   .tableQuestion:focus, .tableQuestion:hover {
@@ -170,6 +171,11 @@
             "tableLeft"
             "tableRight";
     }
+
+    .tableIcon {
+        width: 30px;
+      }
+    
   }
 
   .tableLeft {

@@ -24,22 +24,19 @@
     position:relative;
     color: #fff;
     text-transform: uppercase;
-    padding: 40px 10px 40px;
+    padding: 40px 10px 40px 10px;
     font: 36px ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
     font-size: clamp(1rem, 7.5vw, 36px);
 }
 
 .specsCardImage {
-    position: absolute;
     width: 1200px;
-    padding-top: 150px;
+    height: auto;
     padding-right: 10px;
     padding-left: 10px;
-    padding-bottom: 90px;
-    max-width: 100%;
-    width: 90%;
-    height: 100%;
-    content: url("/assets/background/specifications-card1200.svg");
+    background-image: url("/assets/background/specifications-card1200.svg");
+    background-repeat:round;
+    z-index: 1;
 }
 
 
@@ -48,13 +45,12 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    width: 1200px;
-    padding: 90px 0 80px;
+    padding: 50px 0 80px;
+    z-index: 2;
 }
 
 
 .specsTabs {
-    top: -20px;
     position: relative;
     align-self: center;
     display: flex;
@@ -92,14 +88,14 @@
 .specsImageContainer {
     aspect-ratio: 2.7;
     object-fit: auto;
-    width: 90%;
+    width: auto;
     margin-top: 18px;
     margin-left: 5%;
     margin-right: 5%;
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr; 
-    gap: 0px 0px; 
+    gap: 0px 10px; 
     grid-template-areas: 
         ". ."; 
     justify-content: center; 
@@ -107,81 +103,105 @@
     justify-items: center; 
 }
 
-.leftImage {
-    z-index: 1;
-}
-
-.rightImage {
-    z-index: 1;
-}
-
 .specsNote {
     position: relative;
-    text-align: center;
     font-family: GothamProRegular, sans-serif;
     max-width: 100%;
     border-radius: 16px;
+    margin-bottom: 20px;
     background-color: #000;
     margin-top: 30px;
-    width: 90%;
+    width: 1200px;
     color: #fff;
-    padding: 15px 10px;
     border: 2px solid #fff;
+    padding: 16px 24px;
 }
 
+.tableQuestion {
+    background-color: #ffffff00;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .tableQuestion:focus, .tableQuestion:hover {
+    outline: none;
+    background-color: #ffffff00;
+  }
+
+  .tableQuestion:hover {
+    color: #D23008;
+  }
+  
+  .tableIcon {
+    aspect-ratio: 1.82;
+    object-fit: auto;
+    object-position: center;
+    width: 40px;
+    margin: auto 0;
+  }
+
+  /* .specificationTable {} */
+
+  .tableString {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "tableLeft tableRight";
+  }
+
+  @media (max-width: 800px) {
+    .tableString {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "tableLeft"
+            "tableRight";
+    }
+  }
+
+  .tableLeft {
+    width: 350px;
+    font-family: ArtegraSansExBold, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-right: 10px;
+  }
+  .tableRight {
+    font-family: GothamProRegular, sans-serif;
+    font-size: 24px;
+    padding-right: 10px;
+  }
+
 @media (max-width: 1300px) {
-    .specsContent {
+    .specsCardImage {
         max-width: 90%;
     }
 
     .specsNote {
         max-width: 90%;
-    }
-}
+        border: 1.5px solid #fff;
 
-@media (max-width: 991px) {
-    .technicalSpecs {
-        max-width: 100%;
-    }
-
-    .specsTitle {
-        max-width: 100%;
-    }
-
-    .specsTabs {
-        flex-wrap: wrap;
-    }
-
-    /* .specsNote {
-        max-width: 80%;
-    } */
-}
-
-@media (max-width: 820px) {
-    .specsCardImage {
-        padding-top: 200px;
     }
 }
 
 @media (max-width: 680px) {
     .specsCardImage {
-        content: url("/assets/background/specifications-card960.svg");
-        margin-top: 70px;
-    }
-
-
-    .specsContent {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        height: 350px;
+        background-image: url("/assets/background/specifications-card960.svg");
     }
 
     .specsNote {
         border: 1px solid #fff;
-    }
-
-    .specsCardImage {
-        padding-top: 20px;
     }
 
     .specsImageContainer {
@@ -189,31 +209,16 @@
         margin-right: 10%;
         width: 80%;
     }
-}
 
-@media (max-width: 640px) {
-    .specsContent {
-        padding-top: 50px;
-    }
-}
-
-@media (max-width: 600px) {
-    .specsContent {
-        padding-top: 60px;
+    .specsTitle {
+        padding-bottom: 20px;
     }
 }
 
 @media (max-width: 550px) {
     .specsCardImage {
-        content: url("/assets/background/specifications-card460.svg");
-        padding-top: 0px;
+        background-image: url("/assets/background/specifications-card460.svg");
     }
-
-    .specsContent {
-        padding-top: 90px;
-        height: 650px;
-    }
-
     .specsImageContainer {
         grid-template-columns: 1fr; 
         grid-template-rows: 1fr 1fr; 
@@ -229,23 +234,9 @@
     }
 
     .leftImage, .rightImage {
-        height: 185px;
+        height: 200px;
         width: auto;
         max-width: fit-content;
-    }
-}
-
-@media (max-width: 525px) {
-    .specsContent {
-        padding-top: 100px;
-        height: 625px;
-    }
-}
-
-@media (max-width: 475px) {
-    .specsContent {
-        padding-top: 70px;
-        height: 550px;
     }
 }
 
@@ -260,17 +251,11 @@
     }
 }
 
-@media (max-width: 425px) {
-    .specsContent {
-        padding-top: 80px;
-        height: 500px;
-    }
-}
 
 @media (max-width: 400px) {
     .specsContent {
         padding-top: 70px;
-        height: 450px;
+        height: 500px;
     }
 
     .leftImage, .rightImage {
@@ -279,28 +264,15 @@
 }
 
 @media (max-width: 375px) {
-    .specsCardImage {
-        margin-top: 50px;
-    }
-
-    .specsContent {
-        height: 400px;
-        padding-top: 70px;
-    }
-
     .leftImage, .rightImage {
         height: 125px;
     }
 }
 
 @media (max-width: 350px) {
-    .specsCardImage {
-        margin-top: 50px;
-    }
-
     .specsContent {
         height: 350px;
-        padding-top: 60px;
+        padding-top: 40px;
     }
 
     .leftImage, .rightImage {

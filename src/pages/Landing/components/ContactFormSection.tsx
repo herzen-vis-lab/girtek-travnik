@@ -13,6 +13,8 @@ const ContactFormSection: React.FC = () => {
     comment: ''
   });
 
+  const [alertOpacity, setAlertOpacity] = useState(1)
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -24,7 +26,7 @@ const ContactFormSection: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const serviceId = 'service_emd2b7c'
+    const serviceId = 'service_emd2b7c1'
     const templateId = 'template_v61b95d'
     const publicKey = 'YuaEX2soTP8gzABiL'
 
@@ -61,21 +63,29 @@ https://girtek.ru/catalog/wheel/travn/travnik/
           comment: ''
         });
         setIsSubmited('success')
+        setAlertOpacity(1)
 
         // setInterval(() => setIsSubmited(''), 3000);
       })
       .catch((error) => {
         console.error('Error sending email: ', error);
         setIsSubmited('error')
+        setAlertOpacity(1)
+
+        setTimeout(
+          () => {
+            var refreshIntervalId = setInterval(() => setAlertOpacity(x => x -= 0.01), 10)
+            setTimeout(() => clearInterval(refreshIntervalId), 1000);
+          }
+          , 4000)
 
         // setInterval(() => setIsSubmited(''), 3000);
       })
   };
-
   return (
     <>
-      {isSubmited == 'success' ? <Alert type='success' message='Сообщение успешно отправлено'><p>Сообщение успешно отправлено</p></Alert> : <></>}
-      {isSubmited == 'error' ? <Alert type='error' message='Что-то пошло не так'><p>Что-то пошло не так</p></Alert> : <></>}
+      {isSubmited == 'success' ? <Alert type='success' opacity={alertOpacity}><p>Сообщение успешно отправлено</p></Alert> : <></>}
+      {isSubmited == 'error' ? <Alert type='error' opacity={alertOpacity}><p>Что-то пошло не так</p></Alert> : <></>}
       
       <section className={styles.contactForm}>
       <form onSubmit={handleSubmit} className={styles.form}>

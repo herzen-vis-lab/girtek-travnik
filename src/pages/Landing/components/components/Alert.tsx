@@ -6,10 +6,10 @@ import { useState } from "react";
 interface AlertProps {
     children: any;
     type: string;
-    message: string;
+    opacity: number;
   }
 
-export const Alert: React.FC<AlertProps> = ({ children, type, message }) => {
+export const Alert: React.FC<AlertProps> = ({ children, type, opacity }) => {
     const [isShow, setIsShow] = useState(true);
 
     const renderElAlert = function () {
@@ -22,12 +22,12 @@ export const Alert: React.FC<AlertProps> = ({ children, type, message }) => {
     };
   
     return (
-    <div className={style.alertParent}>
+    <div className={style.alertParent} style={{opacity: opacity}}>
             <div className={css(style.alert, style[type], !isShow && style.hide)}>
                 <span className={style.closebtn} onClick={handleClose}>
                 &times;
                 </span>
-                {children ? renderElAlert() : message}
+                {renderElAlert()}
             </div>
       </div>
     );

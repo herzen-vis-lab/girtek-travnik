@@ -261,19 +261,19 @@
     padding: 40px 10px 80px;
   }
   
-  .deliverySteps {
-    margin-top: 20px;
-    width: 1300px;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    gap: 30px; 
-    grid-template-areas: "deliveryStep1 deliveryStep2 deliveryStep3 deliveryStep4";
-    justify-content: space-evenly; 
-    justify-items: center; 
-    align-content: start; 
-    margin-left: auto;
-    margin-right: auto;
-  }
+.deliverySteps {
+  margin-top: 20px;
+  width: 1300px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  gap: 30px; 
+  grid-template-areas: "deliveryStep1 deliveryStep2 deliveryStep3 deliveryStep4";
+  justify-content: space-evenly; 
+  justify-items: center; 
+  align-content: start; 
+  margin-left: auto;
+  margin-right: auto;
+}
   
   .deliveryStep1, .deliveryStep2, .deliveryStep3, .deliveryStep4 {
   }

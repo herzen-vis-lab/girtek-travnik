@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
             <div className={styles.heroTextContainer}>
             <img src={TRAVNIK} alt="Travnik Logo" className={styles.heroLogo} />
             <h1 className={styles.heroTitle}>
-                Уникальный вездеход, созданный для преодоления сложных условий
+                Травник — ваш личный вездеход
                 {/* <span className={styles.heroTitlePart}></span> */}
                 {/* <span className={styles.heroTitlePart}>преодоления сложных условий</span> */}
             </h1>

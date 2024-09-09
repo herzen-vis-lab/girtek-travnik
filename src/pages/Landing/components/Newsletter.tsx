@@ -84,7 +84,8 @@ const Newsletter: React.FC = () => {
             <label htmlFor="emailInput" className={styles.visuallyHidden}>Введите e-mail</label>
             <input
               type="email"
-              id="emailInput"
+              id="email"
+              name="email"
               value={formData.email}
               onChange={handleChange}
               placeholder="Введите e-mail"

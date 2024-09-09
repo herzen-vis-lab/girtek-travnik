@@ -26,7 +26,7 @@ const ContactFormSection: React.FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const serviceId = 'service_emd2b7c'
+    const serviceId = 'service_8s6c144'
     const templateId = 'template_v61b95d'
     const publicKey = 'YuaEX2soTP8gzABiL'
 
